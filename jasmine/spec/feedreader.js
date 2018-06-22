@@ -112,7 +112,7 @@ $(function() {
            });
          });
          it('The content changes when a new feed is loaded', function(done) {
-           var newFeedSelection = document.querySelector('.feed');
+           var newFeedSelection = document.querySelector('.feed').innerHTML;
            expect(feedSelection).not.toBe(newFeedSelection);
            done();
          });
